@@ -1,0 +1,74 @@
+﻿@using TreasureL.Extensions
+@model TreasureL.Models.SanPham
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+     var nhanvienPage = Context.Session.Get<NhanVien>("user-admin");
+    if(nhanvienPage.IsAdmin == 0){
+        Context.Response.Redirect("/admin");
+    }
+}
+
+<h3>Xóa sản phẩm này?</h3>
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tên sản phẩm
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TenSp)
+        </dd>
+        <dt class="col-sm-2">
+            Đơn vị tính
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DonViTinh)
+        </dd>
+        <dt class="col-sm-2">
+            Đơn giá
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+        <dt class="col-sm-2">
+            Hình sản phẩm
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HinhSp)
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        
+        <dd class="col-sm-10">
+
+        @if (Model.TrangThai == true)
+        {
+            <span>
+                Còn sản phẩm
+            </span>
+        }
+        else
+        {
+            <span>
+                Sản phẩm đã hết hàng
+            </span>
+        }
+        </dd>
+        <dt class="col-sm-2">
+            Loại sản phẩm
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MaLoaiSpNavigation.TenLoaiSp)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaSp" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a class="btn btn-secondary ml-2" asp-action="Index">Quay lại</a>
+    </form>
+</div>

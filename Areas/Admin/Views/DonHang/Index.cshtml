@@ -1,0 +1,78 @@
+﻿@model IEnumerable<TreasureL.Models.DonHang>
+
+@{
+    ViewData["Title"] = "Quản lý dơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex justify-content-between">
+    <h4 class="mb-0">Quản lý Đơn hàng</h4>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Thêm mới đơn hàng</a>
+    </p>
+</div>
+<table class="table table-dark mb-0">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>
+                Mã đơn hàng
+            </th>
+            <th>
+                Hình thức thanh toán
+            </th>
+            <th>
+                Tên nhân viên
+            </th>
+            <th>
+                Ngày giao hàng
+            </th>
+            <th>
+                Ngày lập hóa đơn
+            </th>       
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{
+            int i = 0;
+        }
+        @foreach (var item in Model)
+        {
+            i++;
+            <tr>
+                <td>@i</td>
+                <td>@item.MaDh</td>
+                <td>
+                    @if(item.MaTt == 1)
+                    {
+                        <span>Mo mo </span>
+                    }
+                    @if(item.MaTt == 2){
+                        <span> Card</span>
+                    }
+                    @if(item.MaTt ==3)
+                    {
+                        <span> Tiền mặt</span>
+                    }
+                   
+                </td>
+                <td>@Html.DisplayFor(modelItem =>item.MaDh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayGh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayLapHd)
+                </td>
+
+                <td>
+                    <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.MaDh"><i class="bi bi-pencil-square"></i></a> |
+                  
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

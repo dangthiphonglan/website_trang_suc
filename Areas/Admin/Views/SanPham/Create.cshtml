@@ -1,0 +1,71 @@
+﻿@using TreasureL.Areas.Admin.Models
+@using TreasureL.Extensions
+@model SanPhamRequest
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var nhanvienPage = Context.Session.Get<NhanVien>("user-admin");
+    if (nhanvienPage.IsAdmin == 0)
+    {
+        Context.Response.Redirect("/admin");
+    }
+}
+
+<h4>Tạo sản phẩm mới</h4>
+<hr />
+<div>
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+       <div class="row">
+            <div class="form-group col-6">
+                <label asp-for="TenSp" class="control-label">Tên sản phẩm</label>
+                <input asp-for="TenSp" class="form-control" required/>
+                <span asp-validation-for="TenSp" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="MaLoaiSpNavigation.TenLoaiSp" class="control-label">Loại sản phẩm</label>
+                <select asp-for="MaLoaiSpNavigation.TenLoaiSp" class="form-control"required>
+                    <option value="27">Nhẫn</option>
+                    <option value="28">Dây chuyền</option>
+                    <option value="30">Khuyên tai</option>
+                    <option value="31">Vòng tay</option>
+                    <option value="32">Chocker</option>
+                    <option value="34">Bông tai</option>
+                </select>
+                <span asp-validation-for="MaLoaiSpNavigation.TenLoaiSp" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="DonViTinh" class="control-label">Đơn vị tính</label>
+                <input asp-for="DonViTinh" class="form-control" />
+                <span asp-validation-for="DonViTinh" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="DonGia" class="control-label">Đơn giá</label>
+                <input asp-for="DonGia" class="form-control" required/>
+                <span asp-validation-for="DonGia" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="TrangThai" class="control-label">Trạng thái</label>
+                <select asp-for="TrangThai" class="form-control">
+                    <option value="true">Còn sản phẩm</option>
+                    <option value="false">Hết sản phẩm</option>
+                </select>
+                <span asp-validation-for="TrangThai" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="ImageFile" class="control-label">Hình ảnh sản phẩm</label>
+                <input asp-for="ImageFile" type="file" class="form-control" />
+                <span asp-validation-for="ImageFile"  class="text-danger"></span>
+            </div>
+            <div class="form-group col-12 d-flex justify-content-end">
+                <input type="submit" value="Tạo mới" class="btn btn-primary" />
+                 <a class="btn btn-secondary ml-2" asp-action="Index">Quay lại</a>
+            </div>
+       </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

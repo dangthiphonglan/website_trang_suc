@@ -1,0 +1,81 @@
+﻿@model IEnumerable<TreasureL.Models.NhanVien>
+
+@{
+    ViewData["Title"] = "Quản lý nhân viên";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex justify-content-between">
+    <h4 class="mb-0">Quản lý Nhân viên</h4>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Thêm mới nhân viên</a>
+    </p>
+</div>
+<table class="table table-dark mb-0">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>
+                Tên nhân viên
+            </th>
+            <th>
+                Họ nhân viên
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Điện thoại 
+            </th>
+
+            <th>
+               Email
+            </th>
+            <th>
+                Ca làm việc
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+       @{ 
+           int i = 0;
+       }
+        @foreach (var item in Model)
+        {
+            i++;
+            <tr>
+                <td>@i</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenNv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoNv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DienThoai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @if(item.CaLamViec == 1){
+                        <span>Ca sáng</span>
+                    }else{
+                        <span>Ca chiều</span>
+                    }
+                </td>
+
+                <td>
+                    <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.MaNv"><i class="bi bi-pencil-square"></i></a> |
+                    <a asp-action="Delete" class="btn btn-danger" onclick="return confirm('Bạn có chắc là muốn xóa không?');"
+                    asp-route-id="@item.MaNv"><i class="bi bi-archive"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

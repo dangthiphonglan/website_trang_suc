@@ -1,0 +1,163 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DaisyStore
+build_property.RootNamespace = DaisyStore
+build_property.ProjectDir = C:\Chun\ASPNET\DaisyStore\DaisyStore\DaisyStore\DaisyStore\DaisyStore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Chun\ASPNET\DaisyStore\DaisyStore\DaisyStore\DaisyStore\DaisyStore
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/DonHang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9uSGFuZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/DonHang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9uSGFuZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/DonHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9uSGFuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/KhachHang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/KhachHang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/KhachHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/NhanVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/NhanVien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/NhanVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/SanPham/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/SanPham/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/SanPham/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/SanPham/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/SanPham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Auth/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/GioHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/GioHang/ThanhToan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ1xUaGFuaFRvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Home/_ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUHJvZHVjdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/KhachHang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/SanPham/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/SanPham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/SanPham/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Chun/ASPNET/DaisyStore/DaisyStore/DaisyStore/DaisyStore/DaisyStore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

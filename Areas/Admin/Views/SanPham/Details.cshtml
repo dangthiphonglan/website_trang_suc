@@ -1,0 +1,70 @@
+﻿@model TreasureL.Models.SanPham
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-sm-5">
+        <h4>Chi tiết sản phẩm</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-6">
+                Tên sản phẩm
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.TenSp)
+            </dd>
+            <dt class="col-sm-6">
+                Đơn vị tính
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.DonViTinh)
+            </dd>
+            <dt class="col-sm-6">
+                Đơn giá
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.DonGia)
+            </dd>
+
+            <dt class="col-sm-6">
+                Trạng thái sản phẩm
+            </dt>
+            <dd class="col-sm-6">
+
+                @if (Model.TrangThai == true)
+                {
+                    <span>
+                        Còn sản phẩm
+                    </span>
+                }
+                else
+                {
+                    <span>
+                        Sản phẩm đã hết hàng
+                    </span>
+                }
+            </dd>
+            <dt class="col-sm-6">
+                Loại sản phẩm
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.MaLoaiSpNavigation.TenLoaiSp)
+            </dd>
+
+        </dl>
+        <div class="bg-transparent ">
+            ------------------ AAA SHOP ------------------
+        </div>
+    </div>
+    <div class="col-sm-7">
+        <div class="image">
+            <img class="w-100 " style="height:578px" src="~/@Model.HinhSp" />
+        </div>
+    </div>
+    <div class="">
+        <a asp-action="Edit" asp-route-id="@Model.MaSp">Edit</a> |
+        <a class="btn btn-secondary ml-2" asp-action="Index">Quay lại</a>
+    </div>
+</div>

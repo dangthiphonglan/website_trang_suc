@@ -1,0 +1,57 @@
+﻿@using TreasureL.Helpers
+@model IEnumerable<TreasureL.Models.SanPham>
+@{
+    ViewData["Title"] = "Search";
+}
+<style>
+    @@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&display=swap');
+
+    * {
+        font-family: "Open Sans", sans-serif;
+    }
+</style>
+<div class="container mt-5">
+    <span class="mb-2">Tìm kiếm: @ViewBag.p</span>
+    <div class="row">
+        @if (Model.Count() > 0)
+        {
+            foreach (var item in Model)
+            {
+                <div class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="card d-flex flex-column text-center border height100">
+                        <div class="single-image">
+                            <img src="~/@item.HinhSp" height="100%" class="card-img-top" alt="...">
+                            <a asp-controller="SanPham" asp-action="Detail" asp-route-id="@item.MaSp" class="btn-order">Xem Ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name" asp-route-id="@item.MaSp"><h5>@item.TenSp</h5></div>
+
+                            <div class="product-price">@Html.FormatPrice(@item.DonGia) VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+
+                @*<div class="col-4 mb-4">
+        <div class="card w-100">
+        <div class="single-image">
+        <img src="~/@item.HinhSp" width="100%" ;heigh="100%" class="card-img-top" alt="...">
+        <a asp-controller="SanPham" asp-action="Detail" asp-route-id="@item.MaSp" class="btn-order">Xem Ngay</a>
+        </div>
+        <div class="card-body">
+        <a asp-controller="SanPham" asp-action="Detail" asp-route-id="@item.MaSp"><h5>@item.TenSp</h5></a>
+        </br>
+        <span class="price">@String.Format("{0:#,###}", @item.DonGia) VNĐ</span>
+        </div>
+        </div>
+        </div>*@
+            }
+        }
+        else
+        {
+            <div class="empty-data">
+                <img src="~/imagesapp/not-available.png" />
+                <strong>Không tìm thấy sản phẩm nào</strong>
+            </div>
+        }
+    </div>
+</div>

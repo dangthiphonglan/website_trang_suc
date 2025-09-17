@@ -1,0 +1,65 @@
+﻿@model TreasureL.Models.KhachHang
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h4> Tạo khách hàng mới</h4>
+<hr />
+<div>
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="form-group col-6">
+                <label asp-for="TenKh" class="control-label">Tên khách hàng</label>
+                <input asp-for="TenKh" class="form-control" />
+                <span asp-validation-for="TenKh" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="HoKh" class="control-label">Họ khách hàng</label>
+                <input asp-for="HoKh" class="form-control" />
+                <span asp-validation-for="HoKh" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="GioiTinh" class="control-label">Giới tính</label>
+                <input asp-for="GioiTinh" class="form-control" />
+                <span asp-validation-for="GioiTinh" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="DienThoai" class="control-label">Điện thoại</label>
+                <input asp-for="DienThoai" class="form-control" />
+                <span asp-validation-for="DienThoai" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="DiaChi" class="control-label">Địa chỉ</label>
+                <input asp-for="DiaChi" class="form-control" />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="TenDangNhap" class="control-label">Tên đăng nhập</label>
+                <input asp-for="TenDangNhap" class="form-control" />
+                <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="MatKhau" class="control-label">Mật khẩu</label>
+                <input asp-for="MatKhau" class="form-control" />
+                <span asp-validation-for="MatKhau" class="text-danger"></span>
+            </div>
+            <div class="form-group col-12 d-flex justify-content-end">
+                <input type="submit" value="Tạo mới" class="btn btn-primary" />
+                <a class="btn btn-secondary ml-2" asp-action="Index">Quay lại</a>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

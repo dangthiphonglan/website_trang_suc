@@ -1,0 +1,54 @@
+﻿@model TreasureL.Models.DonHang
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h4> Tạo mới đơn hàng</h4>
+<hr />
+<div>
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="form-group col-6">
+                <label asp-for="MaKh" class="control-label">Mã khách hàng</label>
+                <input asp-for="MaKh" class="form-control" />
+                <span asp-validation-for="MaKh" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+            <label asp-for="MaTt" class="control-label">Hình thức thanh toán</label>
+            <select asp-for="MaTt" class="form-control">
+                <option value="1">Mo mo </option>
+                <option value="2">Card</option>
+                <option value="3">Tiền mặt </option>
+            </select>
+            <span asp-validation-for="MaTt" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="MaNv" class="control-label">Mã nhân viên</label>
+                <input asp-for="MaNv" class="form-control" />
+                <span asp-validation-for="MaNv" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="NgayGh" class="control-label">Ngày giao hàng</label>
+                <input asp-for="NgayGh" class="form-control" />
+                <span asp-validation-for="NgayGh" class="text-danger"></span>
+            </div>
+            <div class="form-group col-6">
+                <label asp-for="NgayLapHd" class="control-label">Ngày lập hóa đơn</label>
+                <input asp-for="NgayLapHd" class="form-control" />
+                <span asp-validation-for="NgayLapHd" class="text-danger"></span>
+            </div>
+            <div class="form-group col-12 d-flex justify-content-end">
+                <input type="submit" value="Tạo mới" class="btn btn-primary" />
+                <a class="btn btn-secondary ml-2" asp-action="Index">Quay lại</a>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

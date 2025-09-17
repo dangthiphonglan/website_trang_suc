@@ -1,0 +1,197 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+/*Them vo mau background*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans:ital,wght@0,400;1,500&family=Playfair+Display:wght@500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+ Provide sufficient contrast against white background 
+a {
+  color: #0366d6;
+}
+ .nav-item:hover{
+     border-radius:20px;
+     background-color:aquamarine;
+     color: white;
+     
+ }
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+ /*Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /*  Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    /* Vertically center the text there*/
+}
+/*Healine*/
+.headline {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #111;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #555;
+    font-weight:bolder;
+}
+.product-info {
+    padding: 10px 0px;
+}
+ .product-info a {
+    display: block;
+    text-decoration: none;
+}
+a.product-name {
+    color: #334862;
+    padding: 3px 0px;
+}
+.product-price {
+    color: #111;
+    padding: 2px 0px;
+    font-weight: 600;
+    font-size:18px;
+    text-align:center;
+}
+.card .single-image {
+    position: relative;
+    overflow: hidden;
+}
+    .card .single-image a.btn-order {
+        padding: 10px 0px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color: #A0522D;
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        bottom: -45px;
+        /*//   hover lên để hiển thị*/
+        transition: 0.25s ease-in-out;
+    }
+
+    .card:hover a.btn-order {
+    bottom: 0;
+    transition: all .3s ease;
+}
+span.number {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .single-image img{
+    width: 100%;
+    height: 300px;
+    
+}
+    .card .single-image:hover img{
+        transform:scale(1.2);
+    }
+
+    /* Side-bar : Admin*/
+.side-bar {
+    background-color: #EED5B7;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    min-height: 80vh;
+}
+
+    .side-bar .nav-item .nav-link {
+        color: #fff;
+    }
+    /** Page
+        Click choose => green, color: */
+    
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+a:hover {
+    background: #ddd;
+    color: black;
+}   
+
+.pre {
+        background-color: #f1f1f1;
+        color: black;
+    }
+ .next {
+        background-color: #04AA6D;
+        color: white;
+    }
+.pagess {
+    border-radius: 50%;
+}
+
+.empty-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: 100px;
+}

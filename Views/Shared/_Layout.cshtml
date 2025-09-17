@@ -1,0 +1,184 @@
+﻿@using TreasureL.Extensions
+@{
+    KhachHang kh = null;
+    if (Context.Session.Get<KhachHang>("user") != null)
+    {
+        kh = Context.Session.Get<KhachHang>("user");
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreasureL </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> TreasureL</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand disabled" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/Images/logo.jpg" alt="logo" style="height: 60px;width: 90px;" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="GioHang" asp-action="Index">Giỏ hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item btn-group">
+                            <button type="button" class="btn btn-secondary" data-toggle="dropdown">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right py-3 py-3">
+                                <form asp-controller="SanPham" asp-action="Search" method="get" class="px-3">
+                                    <div class="input-group is-invalid">
+                                        <div class="custom-file">
+                                            <input type="search" style="width: 300px;" class="form-control" name="p" required>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="submit">
+                                                <i class="bi bi-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        @*KH not login*@
+                        @if (kh == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Auth" asp-action="Login">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Auth" asp-action="SignIn">Đăng Ký</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark font-weight-bold" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a>
+                            </li>
+                        }
+                        @*Logout*@
+                        else
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark" data-toggle="dropdown" href="#">@kh.TenKh</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" asp-action="Edit" asp-controller="KhachHang">Chỉnh sửa</a>
+                                    <a class="dropdown-item" asp-action="Logout" asp-controller="Auth">Đăng xuất</a>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    @*Footer*@
+    <footer class="bg-dark p-2 text-light" style="bottom: 0; width: 100%;">
+        <h4 class="text-center">Copyright by TreasureL</h4>
+    </footer>
+
+
+    <style>
+
+        h5 {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        ul.social li {
+            padding: 3px 0;
+        }
+
+            ul.social li a i {
+                margin-right: 5px;
+                font-size: 25px;
+                -webkit-transition: .5s all ease;
+                -moz-transition: .5s all ease;
+                transition: .5s all ease;
+            }
+
+            ul.social li:hover a i {
+                font-size: 30px;
+                margin-top: -10px;
+            }
+
+            ul.social li a,
+            ul.quick-links li a {
+                color: #ffffff;
+            }
+
+                ul.social li a:hover {
+                    color: #000;
+                }
+
+        ul.quick-links li {
+            padding: 3px 0;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+
+            ul.quick-links li a i {
+                margin-right: 5px;
+            }
+
+            ul.quick-links li:hover a i {
+                font-weight: 700;
+            }
+    </style>
+
+    <!-- ./Footer -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        $.ajax({
+            method: "get",
+            url: "/san-pham/loai-sp"
+        }).done(function (data) {
+            let values = ""
+            $.each(data, function (key, item) {
+                values += `<a class="dropdown-item" href="/san-pham/${item.maLoaiSp}">${item.tenLoaiSp}</a>`
+            })
+            $("#loai-sp").html(values)
+        })
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

@@ -1,0 +1,144 @@
+﻿@{
+    var carts = (Cart)ViewBag.Cart;
+}
+<div class="container mt-5">
+    @if (carts != null && carts.Items.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Mã SP</th>
+                    <th scope="col">Tên Sản phẩm</th>
+                    <th scope="col">Số Lượng</th>
+                    <th scope="col">Đơn Giá</th>
+                    <th scope="col">Thành Tiền</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in carts.Items)
+                {
+                    var tt = item.sanPham.DonGia * item.SoLuong;
+                    <tr id="@item.sanPham.MaSp">
+                        <td>@item.sanPham.MaSp</td>
+                        <td>@item.sanPham.TenSp</td>
+                        <td>
+
+                            <div class="d-flex">
+                                <button class="btn-reduce btn btn-sm btn-primary" data-price="@String.Format("{0:#,###}",item.sanPham.DonGia)" data-id="@item.sanPham.MaSp">
+                                    <i class="bi bi-dash-lg"></i>
+                                </button>
+                                <span class="number">@item.SoLuong</span>
+                                
+                                <button class="btn-plus btn-sm btn btn-primary" data-price="@item.sanPham.DonGia" data-id="@item.sanPham.MaSp">
+                                    <i class="bi bi-plus-lg"></i>
+                                </button>
+                            </div>
+
+                        </td>
+                        <td>@String.Format("{0:#,###}", @item.sanPham.DonGia)</td>
+                        <td id="td_@item.sanPham.MaSp">@tt</td>
+                        <td>
+                            <button class="btn btn-danger btn-delete" data-id="@item.sanPham.MaSp">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+        @ViewBag.Error
+        <div>
+            <a class="btn btn-info" asp-controller="GioHang" asp-action="ThanhToan">
+                Đặt hàng
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="empty-data">
+            <img src="~/imagesapp/not-available.png" />
+            <span><i>Không có sản phẩm trong giỏ hàng</i></span>
+        </div>
+    }
+</div>
+
+<div class="position-fixed top-0 right-0 p-3" style="z-index: 5; right: 0; top: 0;">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+        <div class="toast-header">
+            <div class="toast-body" id="title-toast">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        $(".btn-reduce").click(function () {
+            let val = parseInt($(this).next().text())
+            if (val > 0) {
+                val--;
+            }
+            var el = $(this)
+            var id = el.attr("data-id");
+            let data = {
+                MaSp: id,
+                SoLuong: val
+            }
+
+            $.ajax({
+                method: "POST",
+                url: `/gio-hang/update`,
+                data: JSON.stringify(data),
+                contentType: 'application/json',
+                success: function (data) {
+                    el.next().text(val)
+            
+                    var price = parseInt(el.attr("data-price"))
+                    $(`#td_${id}`).text(new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price * val))
+                },
+            })
+        })
+
+        $(".btn-plus").click(function () {
+            let val = parseInt($(this).prev().text())
+            val++;
+            var el = $(this)
+            var id = el.attr("data-id");
+            let data = {
+                MaSp: id,
+                SoLuong: val
+            }
+
+
+            $.ajax({
+                method: "POST",
+                url: `/gio-hang/update`,
+                data: JSON.stringify(data),
+                contentType: 'application/json',
+                success: function (data) {
+                    el.prev().text(val)
+
+                    var price = parseInt(el.attr("data-price"))
+                    $(`#td_${id}`).text(new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price * val))
+                },
+            })
+        })
+
+        $(".btn-delete").click(function () {
+            var id = $(this).attr("data-id");
+            $.ajax({
+                method: "DELETE",
+                url: `/gio-hang/delete/${id}`,
+                success: function (data) {
+                    $(`tr#${id}`).remove();
+                    $("#title-toast").text("Xoá thành công!")
+                    $('#liveToast').toast("show")
+                },
+            })
+        })
+
+    </script>
+}

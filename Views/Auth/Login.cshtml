@@ -1,0 +1,63 @@
+﻿@using TreasureL.Extensions
+@model LoginReq
+@{
+    if (Context.Session.Get<KhachHang>("user") != null)
+    {
+        Context.Response.Redirect("/");
+    }
+}
+
+<div class="wrapper mx-auto w-100">
+    <div class="row justify-content-around ">
+        <form asp-controller="Auth" asp-action="Login" method="POST" class="col-md-6 py-3 mt-3">
+            <h1 class="text-center text-uppercase h3 py-3">
+                Đăng nhập
+            </h1>
+            <div class="form-group">
+                <label for="tenDn">Tên đăng nhập</label>
+                <input type="text" class="form-control" asp-for="username" id="tenDn" aria-describedby="emailHelp">
+                <span asp-validation-for="username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="PW">Mật khẩu</label>
+                <input type="password" asp-for="password" class="form-control" id="PW">
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <button type="submit" class="btn btn-secondary btn-block my-3">Submit</button>
+            
+
+        </form>
+    </div>
+</div>
+
+
+@*<h4 style="margin-bottom: -60px;text-align: center;padding-top: 20px;"> ĐĂNG NHẬP </h4>
+
+<div class="container mt-5 pt-5">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <form asp-controller="Auth" asp-action="Login" method="POST">
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="text" class="form-control" asp-for="username" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <span asp-validation-for="username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" asp-for="password" class="form-control" id="exampleInputPassword1">
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>*@
+
+

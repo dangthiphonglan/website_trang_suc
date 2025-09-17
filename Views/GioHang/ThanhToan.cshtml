@@ -1,0 +1,75 @@
+﻿@model Cart
+@{
+    List<ThanhToan> ListThanhToan  = ViewBag.ListThanhToan;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            @if (Model != null && Model.Items.Count > 0)
+            {
+              
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Mã SP</th>
+                        <th scope="col">Tên Sản phẩm</th>
+                        <th scope="col">Số Lượng</th>
+                        <th scope="col">Đơn Giá</th>
+                        <th scope="col">Thành Tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        var tt = item.sanPham.DonGia * item.SoLuong;
+                        <tr id="@item.sanPham.MaSp">
+                            <td>@item.sanPham.MaSp</td>
+                            <td>@item.sanPham.TenSp</td>
+                            <td>
+                                <div class="d-flex">
+                                    <span class="number">@item.SoLuong</span>
+                                </div>
+                            </td>
+                            <td>@item.sanPham.DonGia</td>
+                            <td id="td_@item.sanPham.MaSp">@tt</td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+                <div>
+                    <a class="btn btn-info" asp-controller="GioHang" asp-action="Index">
+                        Chinh sửa giỏi hàng
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <form asp-controller="GioHang" method="post" asp-action="ThanhToan">
+                        <div class="mb-3">
+                            <label for="MaTt" class="form-label">Phương thức thanh toán:</label>
+                            <select class="form-select form-control" name="MaTt">
+                                @foreach (var item in ListThanhToan)
+                                {
+                                    <option value="@item.MaTt">@item.HinhThucTt</option>
+                                }
+                            </select>
+
+                        </div>
+                        <div>
+                            <button class="btn btn-info" type="submit">
+                                Thanh toán
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            }
+            else
+            {
+                <div class="empty-data">
+                    <img src="~/imagesapp/not-available.png" />
+                    <span><i>Không có sản phẩm trong giỏ hàng</i></span>
+                </div>
+            }
+        </div>
+        
+    </div>
+</div>

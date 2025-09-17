@@ -1,0 +1,84 @@
+﻿@using TreasureL.Extensions
+@model IEnumerable<TreasureL.Models.KhachHang>
+
+@*@{
+    ViewData["Title"] = "Quản lý khách hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var nhanvienPage = Context.Session.Get<NhanVien>("user-admin");
+    if (nhanvienPage.IsAdmin == 0)
+    {
+        Context.Response.Redirect("/admin");
+    }
+}*@
+
+<div class="d-flex justify-content-between">
+    <h4 class="mb-0">Quản lý Khách hàng</h4>
+    @*<p>
+        <a asp-action="Create" class="btn btn-primary">Thêm mới Khách hàng</a>
+    </p>*@
+</div>
+<table class="table table-dark mb-0">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>
+                Tên khách hàng
+            </th>
+            <th>
+                Họ khách hàng
+            </th>
+            <th>
+                Giới tính
+            </th>
+            <th>
+                Điện thoại
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+
+            <th>
+                Email
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{
+            int i = 0;
+        }
+        @foreach (var item in Model)
+        {
+            i++;
+            <tr>
+                <td>@i</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenKh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoKh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GioiTinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DienThoai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+
+                <td>
+                    <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.MaKh"><i class="bi bi-pencil-square"></i></a> |
+                    <a asp-action="Delete" class="btn btn-danger" onclick="return confirm('Bạn có chắc là muốn xóa không?');"
+                       asp-route-id="@item.MaKh"><i class="bi bi-archive"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

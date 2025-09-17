@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+@*@using TreasureL.Extensions
+@{
+    KhachHang kh = null;
+    if(Context.Session.Get<KhachHang>("user") != null){
+        kh = Context.Session.Get<KhachHang>("user");
+    }
+}*@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập - TreasureL</title>
+    <link rel="shortcut icon" type="image/png" href="~/Images/logo.png" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <div class="wrapper mx-auto"style="margin-top: 135px">
+        <div class="row justify-content-around">
+            <form asp-controller="Auth" asp-area="Admin" asp-action="Login" method="POST" class="col-md-6 py-3 mt-3">
+                <h1 class="text-center text-uppercase h3 py-3">
+                    Đăng nhập
+                </h1>
+                <div class="form-group">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" class="form-control" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <button type="submit" class="btn btn-secondary btn-block my-3">Submit</button>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

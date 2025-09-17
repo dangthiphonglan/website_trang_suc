@@ -1,0 +1,233 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\ImagesApp\\not-available.png",
+      "PackagePath": "staticwebassets\\ImagesApp\\not-available.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\57db01ebee6b9c0da7f27cb007dd373d240845377.jpg",
+      "PackagePath": "staticwebassets\\Images\\57db01ebee6b9c0da7f27cb007dd373d240845377.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\Question.png",
+      "PackagePath": "staticwebassets\\Images\\Question.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\banner_TL.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner_TL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\bongtai.png",
+      "PackagePath": "staticwebassets\\Images\\bongtai.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\bongtai1.png",
+      "PackagePath": "staticwebassets\\Images\\bongtai1.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\lactay.png",
+      "PackagePath": "staticwebassets\\Images\\lactay.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\lactay1.png",
+      "PackagePath": "staticwebassets\\Images\\lactay1.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\logo.jpg",
+      "PackagePath": "staticwebassets\\Images\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\nhan.png",
+      "PackagePath": "staticwebassets\\Images\\nhan.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\nhan1.png",
+      "PackagePath": "staticwebassets\\Images\\nhan1.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\nhan2.png",
+      "PackagePath": "staticwebassets\\Images\\nhan2.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\nhan3.png",
+      "PackagePath": "staticwebassets\\Images\\nhan3.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\vongco.png",
+      "PackagePath": "staticwebassets\\Images\\vongco.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\vongco1.png",
+      "PackagePath": "staticwebassets\\Images\\vongco1.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\vongco2.png",
+      "PackagePath": "staticwebassets\\Images\\vongco2.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\Images\\vongco3.png",
+      "PackagePath": "staticwebassets\\Images\\vongco3.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\Đặng Thị Phong Lan_2200007540\\TreasureL\\TreasureL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TreasureL.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TreasureL.props",
+      "PackagePath": "build\\TreasureL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TreasureL.props",
+      "PackagePath": "buildMultiTargeting\\TreasureL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TreasureL.props",
+      "PackagePath": "buildTransitive\\TreasureL.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

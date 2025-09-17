@@ -1,0 +1,139 @@
+﻿<body>
+    <section>
+        <h3>Trang chủ</h3>
+        <div class="row">
+
+            <!-- Doanh thu -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Doanh thu
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">$4000</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thu hút khách hàng -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Thu hút khách hàng
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">1000</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Đa dạng mẫu mã -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                    Đa dạng mẫu mã
+                                </div>
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70%</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress progress-sm mr-2">
+                                            <div class="progress-bar bg-info" role="progressbar"
+                                                 style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Đánh giá -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                    Đánh giá
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">> 700</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-comments fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="Modul_nd">
+        <div class="chuyenmuc">
+            <style type="text/css">
+                #demo {
+                    background: #FFF;
+                    overflow: hidden;
+                    border: 1px dashed #CCC;
+                    width: 960;
+                }
+
+                    #demo img {
+                        border: 3px solid #F2F2F2;
+                    }
+
+                #indemo {
+                    float: left;
+                    width: 800%;
+                }
+
+                #demo1 {
+                    float: left;
+                }
+            </style>
+
+            <script>
+                var speed = 40;
+                var tab = document.getElementById("demo");
+                var tab1 = document.getElementById("demo1");
+                var tab2 = document.getElementById("demo2");
+                tab2.innerHTML = tab1.innerHTML;
+                function Marquee() {
+                    if (tab2.offsetWidth - tab.scrollLeft <= 0)
+                        tab.scrollLeft -= tab1.offsetWidth
+                    else {
+                        tab.scrollLeft++;
+                    }
+                }
+                var MyMar = setInterval(Marquee, speed);
+                tab.onmouseover = function () { clearInterval(MyMar) };
+                tab.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
+            </script>
+        </div>
+    </div>
+
+</body>

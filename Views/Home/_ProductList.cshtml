@@ -1,0 +1,20 @@
+﻿@model List<TreasureL.Models.SanPham>
+@using TreasureL.Helpers
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-12 col-sm-6 col-md-4 p-2">
+            <div class="card d-flex flex-column text-center border height100">
+                <div class="single-image">
+                    <img src="~/@item.HinhSp" class="card-img-top" alt="...">
+                    <a asp-controller="SanPham" asp-action="Detail" asp-route-id="@item.MaSp" class="btn-order">Xem Ngay</a>
+                </div>
+                <div class="product-info">
+                    <div class="product-name" asp-route-id="@item.MaSp"><h5>@item.TenSp</h5></div>
+                    <div class="product-price">@Html.FormatPrice(@item.DonGia) VNĐ</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,88 @@
+﻿@using TreasureL.Extensions
+@model IEnumerable<TreasureL.Models.SanPham>
+
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var nhanvienPage = Context.Session.Get<NhanVien>("user-admin");
+}
+
+<div class="d-flex justify-content-between">
+    <h4 class="mb-0">Quản lý sản phẩm</h4>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Tạo sản phẩm mới</a>
+    </p>
+</div>
+<table class="table table-dark mb-0">
+    <thead>
+        <tr>
+            <th>
+                Hình ảnh
+            </th>
+            <th>
+                Tên sản phẩm
+            </th>
+            <th>
+                Đơn vị tính
+            </th>
+            <th>
+                Đơn giá
+            </th>
+            
+            <th>
+                Trạng thái
+            </th>
+            <th>
+                Loại sản phẩm
+            </th>
+            @if (nhanvienPage.IsAdmin == 1)
+            {
+                <th></th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img width="60" height="60" src="~/@item.HinhSp" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonViTinh)
+                </td>
+                <td>
+                    @String.Format("{0:#,###}", item.DonGia) VNĐ
+                </td>
+                <td>
+                    @if (item.TrangThai == true){
+                        <span>
+                            Còn sản phẩm
+                        </span>
+                    }
+                    else{
+                        <span>
+                            Sản phẩm đã hết hàng
+                        </span>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaLoaiSpNavigation.TenLoaiSp)
+                </td>
+                 
+                @if (nhanvienPage.IsAdmin == 1)
+                {<td>
+                        <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.MaSp"><i class="bi bi-pencil-square"></i></a> |
+                        <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.MaSp"><i class="bi bi-eye"></i></a> |
+                        <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.MaSp"><i class="bi bi-archive"></i></a>
+                    </td>
+                   
+                }
+               
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,123 @@
+﻿@model SanPham
+@using TreasureL.Helpers
+@{
+    List<SanPham> SanPhamTheLoai = ViewBag.SanPhamTheLoai;
+}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="image shadow ">
+                <img class="w-100" src="~/@Model.HinhSp" />
+            </div><br />
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <h4>@Model.TenSp</h4>
+            <span>@Model.MaLoaiSpNavigation.TenLoaiSp</span>
+            <div>@Model.MaLoaiSpNavigation.Mota</div>
+            <div class="mt-4">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Trạng thái:</th>
+                            <td>
+                                @if (Model.TrangThai == true)
+                                {
+                                    <span> Còn sản phẩm</span>
+                                }
+                                else
+                                {
+                                    <span class=""> Hết hàng </span>
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Đơn vị tính:</th>
+                            <td class="pl-3">@Model.DonViTinh</td>
+                        </tr>
+                        <tr>
+                            <th>Đơn Giá:</th>
+                            <td class="pl-3">@String.Format("{0:#,###}", Model.DonGia) VNĐ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex gap-2 mt-4">
+                @if (Model.TrangThai == true)
+                {
+                    <a href="#" class="btn btn-primary" id="btn-add-to-cart">
+                        Thêm vào giỏ hàng
+                    </a>
+                }
+                else
+                {
+                    <a href="#" class="btn btn-primary disabled" id="btn-add-to-cart">
+                        Thêm vào giỏ hàng
+                    </a>
+                }
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary ml-2">
+                    Quay lại
+                </a>
+            </div>
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        @foreach (var item in SanPhamTheLoai)
+        {
+            <div class="col-12 col-sm-6 col-md-4 p-2">
+                <div class="card d-flex flex-column text-center border height100">
+                    <div class="single-image">
+                        <img src="~/@item.HinhSp" class="card-img-top" alt="...">
+                        <a asp-controller="SanPham" asp-action="Detail" asp-route-id="@item.MaSp" class="btn-order">Xem Ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name" asp-route-id="@item.MaSp"><h5>@item.TenSp</h5></div>
+                        <div class="product-price">@Html.FormatPrice(@item.DonGia) VNĐ</div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="position-fixed top-0 right-0 p-3" style="z-index: 5; right: 0; top: 0;">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+        <div class="toast-header">
+            <div class="toast-body" id="title-toast">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#btn-add-to-cart").click(function (event) {
+                event.preventDefault();
+
+                let data = {
+                    MaSp: @Model.MaSp,
+                    SoLuong: 1
+                };
+
+                $.ajax({
+                    method: "POST",
+                    url: '/gio-hang/add',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json',
+                    success: function (response) {
+                        console.log(response);
+                        $("#title-toast").text("Thêm vào giỏ hàng thành công!");
+                        $('#liveToast').toast('show');
+                    },
+                    error: function (error) {
+                        console.log(error);
+                        $("#title-toast").text("Thêm vào giỏ hàng thất bại!");
+                        $('#liveToast').toast('show');
+                    }
+                });
+            });
+        });
+    </script>
+}
